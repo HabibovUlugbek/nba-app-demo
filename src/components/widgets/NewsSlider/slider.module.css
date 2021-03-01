@@ -1,0 +1,42 @@
+
+.featured_item {
+    position:relative;
+    background: url(../../images/articles/1.jpeg);    
+}
+
+.featured_item a {
+    position:absolute;
+    width:100%;
+    bottom:0px;
+    text-decoration: none;
+    right:0px;
+}
+
+.featured_image {
+    height:330px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.featured_caption {
+    position: relative;
+    color:#ffffff;
+    top:0px;
+    width:100%;
+    padding:20px;
+    font-weight:300;
+    font-size:28px;
+    box-sizing: border-box;
+    z-index: 3;
+}
+.featured_caption::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to top , rgba(0,0,0,1), rgba(0,0,0,.0));
+    z-index: -1;
+
+}
